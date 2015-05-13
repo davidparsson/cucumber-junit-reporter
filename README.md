@@ -13,6 +13,9 @@ To install the latest version, run:
 Usage
 -----
 
+
+Create a file in cucumber's `support` directory containing the following:
+
 ```JavaScript
 var reporter = require('cucumber-junit-reporter');
 
