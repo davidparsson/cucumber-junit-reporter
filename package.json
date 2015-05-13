@@ -1,0 +1,29 @@
+{
+  "name": "cucumber-junit-reporter",
+  "version": "0.0.0",
+  "description": "A Jenkins compatible JUnit reporter for cucumber-js",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/davidparsson/cucumber-junit-reporter.git"
+  },
+  "keywords": [
+    "cucumber",
+    "cucumber-js",
+    "xunit",
+    "junit",
+    "reporter"
+  ],
+  "author": "David Pärsson <david@parsson.se>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davidparsson/cucumber-junit-reporter/issues"
+  },
+  "homepage": "https://github.com/davidparsson/cucumber-junit-reporter",
+  "dependencies": {
+    "junit-report-builder": "0.0.2"
+  }
+}
