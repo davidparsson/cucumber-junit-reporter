@@ -20,7 +20,7 @@ Create a file in cucumber's `support` directory containing the following:
 var reporter = require('cucumber-junit-reporter');
 
 module.exports = reporter({
-  reportDir: 'build/test_results/e2e/'
+  reportDir: 'build/test_results/'
 });
 ```
 
