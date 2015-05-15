@@ -8,7 +8,8 @@ function cucumberJUnitReporter(providedConfig, builderFactory) {
     reportPrefix: 'TEST-',
     reportSuffix: '.xml',
     reportFile: 'test_results.xml',
-    oneReportPerFeature: true
+    oneReportPerFeature: true,
+    numberSteps: true
   });
 
   var builder = builderFactory.createBuilder();
@@ -38,6 +39,18 @@ function cucumberJUnitReporter(providedConfig, builderFactory) {
 
   function getGlobalReportPath() {
     return path.join(config.reportDir, config.reportFile);
+  }
+
+  function getStepName(stepCount, step) {
+    var name = '';
+    if (config.numberSteps) {
+      if (stepCount < 10) {
+        name += '0';
+      }
+      name += stepCount + '. ';
+    }
+    name += step.getKeyword() + step.getName()
+    return name;
   }
 
   function formatTime(duration) {
@@ -78,7 +91,7 @@ function cucumberJUnitReporter(providedConfig, builderFactory) {
 
       var testCase = suite.testCase()
         .className(getCurrentTestClassName())
-        .name('' + stepCounter + '. ' + step.getKeyword() + stepName);
+        .name(getStepName(stepCounter, step));
 
       if (stepResult.isSuccessful()) {
         testCase.time(formatTime(stepResult.getDuration()));

@@ -33,6 +33,7 @@ The `reporter` accepts the following config values:
 - `reportPrefix` – Default: `'TEST-'`.
 - `reportSuffix` – Default: `'.xml'`.
 - `reportFile` – Default: `'test_results.xml'`.
+- `numberSteps` – If `true`, each step name in the report will be prefixed by its step number. This is useful when steps are sorter alphabetically. Default: `true`.
 
 
 License
