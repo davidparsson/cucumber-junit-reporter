@@ -24,6 +24,17 @@ module.exports = reporter({
 });
 ```
 
+Accepted config values are:
+
+- `reportDir` – The destination directory for the test reports. Default: `'test_reports'`.
+- `oneReportPerFeature` – Default: `true`.
+  - If `true` the reporter will create one report file per cucumber feature. The report file will be named based on `reportPrefix`, the feature file name and the `reportSuffix`.
+  - If `false` the reporter will create a single report for all features, and the report name will be based on `reportFile`.
+- `reportPrefix` – Default: `'TEST-'`.
+- `reportSuffix` – Default: `'.xml'`.
+- `reportFile` – Default: `'test_results.xml'`.
+
+
 License
 -------
 
