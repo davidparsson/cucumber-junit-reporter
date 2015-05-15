@@ -43,7 +43,7 @@ The `reporter` accepts the following config values:
 License
 -------
 
-[MIT](https://github.com/davidparsson/cucumber-junit-reporter/blob/master/LICENSE)
+[MIT](LICENSE)
 
 Changelog
 ---------
