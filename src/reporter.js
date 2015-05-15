@@ -115,6 +115,7 @@ function cucumberJUnitReporter(providedConfig, builderFactory) {
     this.registerHandler('AfterFeature', function (event, callback) {
       if (config.oneReportPerFeature) {
         builder.writeTo(getFeatureReportPath());
+        builder = builderFactory.createBuilder();
       }
 
       featureName = undefined;
