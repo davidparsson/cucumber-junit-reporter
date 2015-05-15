@@ -27,7 +27,7 @@ module.exports = reporter({
 License
 -------
 
-MIT. See [LICENSE](https://github.com/davidparsson/cucumber-junit-reporter/blob/master/LICENSE).
+[MIT](https://github.com/davidparsson/cucumber-junit-reporter/blob/master/LICENSE)
 
 Changelog
 ---------
