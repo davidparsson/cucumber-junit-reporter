@@ -1,6 +1,8 @@
 cucumber-junit-reporter
 =======================
 
+[![Build Status](https://travis-ci.org/davidparsson/cucumber-junit-reporter.svg?branch=master)](https://travis-ci.org/davidparsson/cucumber-junit-reporter)
+
 A support hook generating [Jenkins](http://jenkins-ci.org/) compatible XML based JUnit reports for [cucumber-js](https://github.com/cucumber/cucumber-js).
 
 Installation
