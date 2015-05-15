@@ -49,7 +49,7 @@ function cucumberJUnitReporter(providedConfig, builderFactory) {
       }
       name += stepCount + '. ';
     }
-    name += step.getKeyword() + step.getName()
+    name += step.getKeyword() + step.getName();
     return name;
   }
 
