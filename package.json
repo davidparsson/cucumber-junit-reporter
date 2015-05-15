@@ -1,6 +1,6 @@
 {
   "name": "cucumber-junit-reporter",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A Jenkins compatible JUnit reporter for cucumber-js",
   "main": "src/index.js",
   "scripts": {
