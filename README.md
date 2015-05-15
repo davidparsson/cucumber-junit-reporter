@@ -24,7 +24,7 @@ module.exports = reporter({
 });
 ```
 
-Accepted config values are:
+The `reporter` accepts the following config values:
 
 - `reportDir` – The destination directory for the test reports. Default: `'test_reports'`.
 - `oneReportPerFeature` – Default: `true`.
