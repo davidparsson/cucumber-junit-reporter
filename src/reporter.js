@@ -1,7 +1,7 @@
 var _ = require('lodash');
 var path = require('path');
 
-function cucumberJUnitReporter(providedConfig, builderFactory) {
+function cucumberJUnitReporter(providedConfig, builder) {
 
   var config = _.defaults(providedConfig || {}, {
     reportDir: 'test_reports',
@@ -12,7 +12,6 @@ function cucumberJUnitReporter(providedConfig, builderFactory) {
     numberSteps: true
   });
 
-  var builder = builderFactory.createBuilder();
   var suite = builder;
   var featurePath;
   var featureName;
@@ -115,7 +114,7 @@ function cucumberJUnitReporter(providedConfig, builderFactory) {
     this.registerHandler('AfterFeature', function (event, callback) {
       if (config.oneReportPerFeature) {
         builder.writeTo(getFeatureReportPath());
-        builder = builderFactory.createBuilder();
+        builder = builder.newBuilder();
       }
 
       featureName = undefined;
